@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #efece3;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  background-color: #4a70a9;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+li {
+  list-style: none;
+}
+ul li :hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.4s;
+}
+ul li :active {
+  background-color: #efece3;
+  color: #4a70a9;
+  border-radius: 5px;
+  padding: 6px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.logo a {
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  position: relative;
+  animation: myAnimation 5s infinite ease-in;
+  letter-spacing: 3px;
+}
+
+.section {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.section:hover {
+  animation: secondAnimation 1s infinite;
+}
+
+.registeration {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.singin {
+  border: 1px solid #efece3;
+  border-radius: 10px;
+  padding: 7px 20px;
+  background-color: #efece3;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.signup {
+  border: 1px solid #efece3;
+  border-radius: 10px;
+  padding: 7px 20px;
+  background-color: #efece3;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.registeration a {
+  color: #4a70a9;
+}
+.singin:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in;
+}
+.signup:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+@keyframes myAnimation {
+  0% {
+    color: red;
+    border-bottom: #efece3;
+    border-top: 2px solid white;
+  }
+  25% {
+    color: lightgreen;
+
+    border-right: 2px solid white;
+  }
+  50% {
+    color: aqua;
+    border-bottom: 2px solid black;
+
+    border-bottom: 2px solid white;
+  }
+  75% {
+    color: blueviolet;
+
+    border-left: 2px solid white;
+  }
+  100% {
+    color: deeppink;
+
+    border: 2px solid white;
+  }
+}
